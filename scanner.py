@@ -1,4 +1,4 @@
-# Enhanced scanner.py with Rich CLI, Slack alerts, HTML/Markdown reports, and secret scanning
+# Enhanced scanner.py with Rich CLI, Slack alerts, HTML/Markdown reports, and 🤫secret🤫 scanning
 import boto3
 import argparse
 import json
@@ -15,12 +15,12 @@ SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
 
 def send_slack_alert(message):
     if not SLACK_WEBHOOK_URL:
-        print("[yellow] No Slack webhook URL found in environment. Skipping alert.")
+        print("[yellow]No Slack webhook URL found in environment. Skipping alert.")
         return
     webhook = WebhookClient(SLACK_WEBHOOK_URL)
     response = webhook.send(text=message)
     if response.status_code == 200:
-        print("[green] Slack alert sent successfully.")
+        print("[green]Slack alert sent successfully.")
 
 def check_s3_public_buckets():
     s3 = boto3.client('s3')
