@@ -46,7 +46,7 @@ Reports are saved to the `reports/` folder:
 - `scan_report.json`
 - `scan_report.md`
 
-## Coming Soon (Ideas to Expand)
+## Roadmap
 
 - IAM user + key audits
 - HTML reporting
@@ -56,10 +56,6 @@ Reports are saved to the `reports/` folder:
 ## License
 
 MIT License. Free to use and extend!
-
-## Preview
-
-_Add a thumbnail image here if you'd like (e.g., from LinkedIn project post)._
 
 ## Contribute
 
